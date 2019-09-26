@@ -5,6 +5,6 @@
     "lerna": "^3.16.4"
   },
   "dependencies": {
-    "request": "^2.88.0"
+
   }
 }
