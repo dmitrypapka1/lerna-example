@@ -1,15 +1,50 @@
 {
-  "name": "bot1",
+  "name": "bot-1",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "description": "A Probot app",
+  "author": "dmitrypapka1 <dmitry.papka@marfeel.com>",
   "license": "ISC",
+  "repository": "https://github.com//bot-1.git",
+  "homepage": "https://github.com//bot-1",
+  "bugs": "https://github.com//bot-1/issues",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "start": "probot run ./index.js",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
   "dependencies": {
-    "lodash": "^4.17.15",
-    "request": "^2.88.0"
+    "probot": "^7.2.0"
+  },
+  "devDependencies": {
+    "jest": "^24.0.0",
+    "nock": "^10.0.0",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2",
+    "standard": "^12.0.1"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "nodemonConfig": {
+    "exec": "npm start",
+    "watch": [
+      ".env",
+      "."
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
