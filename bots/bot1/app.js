@@ -1,5 +1,5 @@
 const request = require('request');
 const lodash = require('lodash');
 
-console.log(request);
-console.log(lodash);
+console.log(typeof request);
+console.log(typeof lodash);
