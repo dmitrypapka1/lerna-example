@@ -1,0 +1,6 @@
+{
+  "packages": [
+    "bots/*"
+  ],
+  "version": "0.0.0"
+}
